@@ -1,0 +1,87 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+button {
+  border: none;
+  font-family: inherit;
+  cursor: pointer;
+  background-color: transparent;
+}
+.container {
+  width: 50%;
+  max-width: 100rem;
+  margin: 10rem auto;
+}
+:root {
+  --bg-color: hsl(193, 38%, 86%);
+  --card-bg: hsl(218, 14%, 73%);
+  --text-color: hsl(218, 23%, 16%);
+}
+.dark {
+  --bg-color: hsl(218, 23%, 16%);
+  --card-bg: hsl(217, 19%, 24%);
+  --text-color: hsl(193, 38%, 86%);
+}
+body {
+  background-color: var(--bg-color);
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+.page-title {
+  text-align: center;
+  color: var(--text-color);
+}
+
+.color-generator {
+  background-color: var(--card-bg);
+  padding: 2rem;
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1rem;
+}
+.color {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-bottom: 1rem;
+  background-color: var(--card-bg);
+  padding: 1rem;
+  color: var(--text-color);
+  margin-top: 1rem;
+}
+.color-code {
+  color: var(--text-color);
+  font-size: 1.6rem;
+  text-transform: uppercase;
+}
+.icon {
+  height: 2rem;
+  width: 2rem;
+}
+.color-box {
+  height: 5rem;
+  width: 7rem;
+}
+.generate-btn {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+}
+.prompt {
+  margin-top: 1.5rem;
+  color: var(--text-color);
+  text-align: center;
+  font-size: 1.8rem;
+}

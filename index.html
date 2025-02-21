@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Advice generator app</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1 class="page-title">Random Color Generator</h1>
+        <button type="button" id="theme-btn">
+          <img
+            src="https://res.cloudinary.com/dvydugv8v/image/upload/v1739830860/moon-solid_g8g4kv.svg"
+            class="icon"
+            alt="dark-mode"
+          />
+        </button>
+      </div>
+      <div class="color">
+        <p class="color-code"></p>
+        <button onclick="copyContent()">
+          <img
+            src="https://res.cloudinary.com/dvydugv8v/image/upload/v1739824564/copy-regular_geclp8.svg"
+            alt="copy"
+            class="icon copy"
+          />
+        </button>
+      </div>
+      <div class="color-generator">
+        <div class="color-box"></div>
+        <button class="generate-btn">Generate</button>
+      </div>
+      <p class="prompt">Click the button to generate a random color!</p>
+    </div>
+  </body>
+</html>
